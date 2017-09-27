@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="calculator">
+
+
+    <p id="title">Command-A</p>
+    <p id="tagline">calculator</p>
+    <input type="text"  id="txt1" value="" disabled/>
+
+    <div class="row">
+        <input class="ctrl" type="button" id="btnC" value="AC" onclick="clean()"/>
+        <input class="ctrl" type="button" id="btnCE" value="CE" onclick="cancel()"/>
+        <input type="button" id="btnProcent" value="%" onclick="calcPercent()"/>
+        <input type="button" id="btnDivide" value="/" onclick="operation(this.value)"/>
+    </div>
+    <div class="row">
+        <input type="button" id="btn7" value="7"/>
+        <input type="button" id="btn8" value="8" onclick="pressNum(this.value)"/>
+        <input type="button" id="btn9" value="9" onclick="pressNum(this.value)"/>
+        <input type="button" id="btnMultiply" value="*" onclick="operation(this.value)"/>
+    </div>
+    <div class="row">
+        <input type="button" id="btn4" value="4" onclick="pressNum(this.value)"/>
+        <input type="button" id="btn5" value="5" onclick="pressNum(this.value)"/>
+        <input type="button" id="btn6" value="6" onclick="pressNum(this.value)"/>
+        <input type="button" id="btnMinus" value="-" onclick="operation(this.value)"/>
+    </div>
+    <div class="row">
+        <input type="button" id="btn1" value="1" onclick="pressNum(this.value)"/>
+        <input type="button" id="btn2" value="2" onclick="pressNum(this.value)"/>
+        <input type="button" id="btn3" value="3" onclick="pressNum(this.value)"/>
+        <input type="button" id="btnPlus" value="+" onclick="operation(this.value)"/>
+    </div>
+    <div class="row">
+        <input type="button" id="btn0" value="0" onclick="pressNum(this.value)"/>
+        <input type="button" id="btnPoint" value="." onclick="pressNum(this.value)"/>
+        <input type="button" id="btnResult" value="=" onclick="operation(this.value)"/>
+        <input type="button" id="btnBKSP" value="B" onclick="backspace()"/>
+    </div>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
